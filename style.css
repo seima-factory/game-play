@@ -1,0 +1,146 @@
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.images{
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.relative{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.absolute-line01{
+    position:absolute;
+    top: 12%;
+    height: auto;
+    width: 75%;
+}
+.absolute-line02{
+    position:absolute;
+    top: 90%;
+    height: auto;
+    width: 80%;
+}
+.absolute-line03{
+    position:absolute;
+    top: 94.5%;
+    height: auto;
+    width: 80%;
+}
+small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d013d;
+    color: white;
+    height: 15px;
+    padding: 2em;
+}
+/*---------------アニメーション----------------------------------
+-----------------------------------------------------------*/
+.absolute-line01,.absolute-line02,.absolute-line03{
+    animation: scaleChange 1.2s infinite;
+}
+/* スケール変化のアニメーション定義 */
+@keyframes scaleChange {
+    0% {
+        transform: scale(1.0); /* 初期スケール */
+    }
+    50% {
+        transform: scale(1.1); /* 最大スケール */
+    }
+    100% {
+        transform: scale(1.0); /* 元のスケールに戻る */
+    }
+}
